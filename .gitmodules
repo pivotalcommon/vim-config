@@ -126,3 +126,6 @@
 [submodule "bundle/hammer.vim"]
 	path = bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
