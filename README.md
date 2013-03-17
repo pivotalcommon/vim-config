@@ -12,7 +12,12 @@ see the README at [https://github.com/pivotal/tmux-config](https://github.com/pi
     
 # Compile command-t
 
-    rvm system #ensure build on Ruby 1.8.7 if using RVM
+If using RVM or rbenv, make sure to build on system Ruby 1.8.7:
+
+`$ rvm system` or `$ rbenv shell system`
+
+Then:
+
     cd ~/.vim/bundle/command-t
     bundle
     rake make
