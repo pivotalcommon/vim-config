@@ -18,7 +18,8 @@
 " --------
 
 filetype off                    " Avoid a Vim/Pathogen bug
-call pathogen#helptags()
+call pathogen#infect()
+Helptags
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible                " Don't maintain compatibility with vi
