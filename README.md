@@ -26,3 +26,10 @@ Then:
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
 
     cd ~/.vim && git pull --rebase ; git submodule update ; cd -
+    
+## Bumping plugin versions to latest
+Git submodule update will give you the checked in versions for all the plugins, you can bump up the versions with:
+
+    git submodule foreach git co master && git pull
+    
+You can also commit the bumped versions and submit a pull request if you'd like.
