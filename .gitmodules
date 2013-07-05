@@ -186,3 +186,6 @@
 [submodule "bundle/quickfixfix"]
 	path = bundle/quickfixfix
 	url = https://github.com/brysgo/quickfixfix.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git
