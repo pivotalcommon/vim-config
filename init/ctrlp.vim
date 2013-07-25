@@ -9,7 +9,7 @@ let g:ctrlp_by_filename = 1
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = ',f'
 nnoremap <silent> ,f :CtrlPCurWD<CR>
-nnoremap <silent> ,F :CtrlPClearAllCaches<CR>,f
+nnoremap <silent> ,F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,bb :CtrlPBuffer<cr>
@@ -40,5 +40,3 @@ map ,jT :CtrlP test<CR>
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
 nnoremap <silent> <D-M> :CtrlPBufTag<CR>
-
-
