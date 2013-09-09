@@ -1,3 +1,5 @@
 .netrwhist
 doc/tags
 .vimlog
+bundle/*
+!bundle/vundle

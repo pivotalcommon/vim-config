@@ -5,24 +5,32 @@
     cd ~/.vim
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
+    vim +BundleInstall +qall
 
 # tmux support (optional)
-If you will be using VIM with tmux for remote pairing or window management, 
+
+If you will be using VIM with tmux for remote pairing or window management,
 see the README at [https://github.com/pivotal/tmux-config](https://github.com/pivotal/tmux-config)
     
-# Compile command-t matcher for CtrlP
+# Custom "command-t" matcher for CtrlP
+
+We use a custom matcher for CtrlP that makes it act similarly to CommandT. Run the following to install it.
 
     cd ~/.vim/bundle/matcher
-    make && sudo make install
+    make && make install # or sudo make install if necessary
+
+If you find yourself needing sudo, you might want to change the ownership of your /usr/local directory to the current user (for single-user machines only):
+
+    sudo chown -R $USER:admin /usr/local
     
 # Updating
-As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
+
+First, fetch the latest vim-config via Git. You can also rebase or merge your own project-specific customizations.
+
+Then make sure the right version of Vundle is installed:
 
     cd ~/.vim && git pull --rebase && git submodule sync && git submodule update; cd -
-    
-## Bumping plugin versions to latest
-Git submodule update will give you the checked in versions for all the plugins, you can bump up the versions with:
 
-    git submodule foreach git co master && git pull
-    
-You can also commit the bumped versions and submit a pull request if you'd like.
+To install/upgrade the necessary bundles:
+
+    vim +BundleInstall +qall # or run :BundleInstall within Vim
