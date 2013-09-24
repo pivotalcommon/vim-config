@@ -89,7 +89,6 @@ Bundle 'burke/matcher'
 " Navigation
 "
 Bundle 'scrooloose/nerdtree'
-Bundle 'EnhancedJumps'
 Bundle 'majutsushi/tagbar'
 
 "
