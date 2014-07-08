@@ -186,3 +186,6 @@ map <D-F> :Ag<Space>
 " YankRing show registers
 :nnoremap <silent> <F6> :YRShow<CR>
 
+" exit to normal mode with 'jj' or 'jk'
+inoremap jj <ESC>
+inoremap jk <ESC>
