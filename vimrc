@@ -135,6 +135,7 @@ Plugin 'pivotal/tmux-config'
 Plugin 'tpope/vim-dispatch'
 Plugin 'carlobaldassi/ConqueTerm'
 Plugin 'sjl/vitality.vim'
+Plugin 'itspriddle/vim-marked'
 
 call vundle#end()
 filetype plugin indent on
@@ -156,4 +157,3 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 au BufRead,BufNewFile *.hamlc set ft=haml
-
