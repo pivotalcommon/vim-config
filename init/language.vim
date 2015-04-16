@@ -32,3 +32,6 @@ autocmd FileType ruby imap  <Space>=><Space>
 
 " Open all folds in Markdown.
 autocmd FileType mkd normal zR
+
+" Use JSX with regular JS extension
+let g:jsx_ext_required = 0
