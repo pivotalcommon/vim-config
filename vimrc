@@ -115,6 +115,7 @@ Plugin 'majutsushi/tagbar'
 "
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'slim-template/vim-slim'
 Plugin 'nono/vim-handlebars'
