@@ -1,3 +1,5 @@
+echom "The Pivotal vim-config has moved. Please run ~/.vim/bin/update to automatically migrate."
+
 " ----------
 " Vim Config
 " ----------
