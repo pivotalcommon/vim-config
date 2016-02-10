@@ -3,6 +3,11 @@ cd ~/.vim
 if (git remote get-url origin | grep pivotalcommon);
 then
   git remote set-url origin https://github.com/pivotal/vim-config.git
+  git fetch origin
+  git checkout master
+  git reset --hard origin/master
+  ~/.vim/bin/update
+else
+  git pull
+  vim +PluginInstall! +qall
 fi
-git reset --hard origin/master
-vim +PluginInstall! +qall
